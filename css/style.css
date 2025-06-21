@@ -32,13 +32,14 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 
-#coming-soon:before {
+.wrapper-dark-overlay {
     content: '';
     width: 100vw;
     height: 100vh;
     background: #2c2c2c78;
-    position: absolute;
-    z-index: 0;
+    background-image: linear-gradient(45deg, #8e09285e, transparent);
+    border: 1.5em solid #8e0928;
 }
