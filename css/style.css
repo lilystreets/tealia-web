@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 /* COMING SOON PAGE */
 
 #coming-soon {
-    color: #fff;
+    color: #8e0928;
     background-image: url('../img/koralkova-kabelka-amary-bg.jpeg');
     background-position: center;
     background-size: cover;
@@ -35,11 +35,103 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.wrapper-dark-overlay {
+.wrapper-pink-overlay {
     content: '';
     width: 100vw;
     height: 100vh;
-    background: #2c2c2c78;
-    background-image: linear-gradient(45deg, #8e09285e, transparent);
-    border: 1.5em solid #8e0928;
+    background: #fce2e5f0;
+    background-image: linear-gradient(38deg, #8e092824, transparent);
+    border: 1em solid #8e0928;
+}
+
+.container-cs {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20vh;
+}
+
+header {
+    margin-top: 7vh;
+}
+
+.logo {
+    background-image: url('../img/tealia-logo.svg');
+    background-position: -.2em center;
+    background-size: cover;
+    max-width: 10em;
+    height: 5em;
+    text-indent: -9999px;
+    margin: 0 auto;
+}
+
+.coming-soon-description {
+    margin: 1.5em 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.contacts {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts li a {
+    display: block;
+    margin: 0 .5em;
+    color: #ffffff;
+    font-size: 1.5em;
+    line-height: 1.6;
+    background: #8e0928;
+    padding: 5px;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #8e0928;
+    border-radius: 50%;
+    transition: all .2s ease-out;
+}
+
+.contacts li a:focus,
+.contacts li a:hover {
+    color: #8e0928;
+    background: #fce2e5;
+}
+
+footer {
+    color: #fff;
+    background: #8e0928;
+    width: 100%;
+    padding-top: 0.2em;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: -1em;
+    font-size: .8em;
+    font-weight: 100;
+}
+
+footer p {
+    opacity: .7;
+    padding: .2em;
+    font-family: "Bodoni Moda", serif;
+}
+
+#copyright-year {
+    margin-left: .5em;
+}
+
+@media screen and (max-width:1024px) {
+    .container-cs {
+    padding: 20vh 2vh;
+}
+}
+
+@media screen and (max-width:748px) {
+    .container-cs {
+    padding: 20vh 5vh;
+    }
 }
