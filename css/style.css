@@ -1,0 +1,44 @@
+/* DEFAULT */
+
+html, body {
+    color: #3a3a3a;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    line-height: 1.5;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* clearfix */
+.group:before,
+.group:after { content: " "; display: table; }
+.group:after { clear: both; }
+
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+}
+
+
+/* COMING SOON PAGE */
+
+#coming-soon {
+    color: #fff;
+    background-image: url('../img/koralkova-kabelka-amary-bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+#coming-soon:before {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background: #2c2c2c78;
+    position: absolute;
+    z-index: 0;
+}
